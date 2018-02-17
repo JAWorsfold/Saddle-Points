@@ -67,8 +67,12 @@ public class SaddlePoints {
      * @param array The array to be searched.
      * @return The largest value in the array.
      */
-    int largest(int[] array) {
-        return Integer.MIN_VALUE;
+    public int largest(int[] array) {
+        int largest = array[0];
+        for (int i=0; i<array.length; i++) {
+            if (largest < array[i]){ largest = array[i]; }
+        }
+        return largest;
     }
 
     /**
@@ -77,7 +81,7 @@ public class SaddlePoints {
      * @param array The array to be searched.
      * @return The smallest value in the array.
      */
-    int smallest(int[] array) {
+    public int smallest(int[] array) {
         return Integer.MAX_VALUE;
     }
 
@@ -87,17 +91,17 @@ public class SaddlePoints {
      * @param array The array to be searched.
      * @return An array of the largest values in each column.
      */
-    int[] largestValues(int[][] array) {
+    public int[] largestValues(int[][] array) {
         return null;
     }
 
     /**
-     * Returns an array containing the smallest values in each rpw of the given array.
+     * Returns an array containing the smallest values in each row of the given array.
      *
      * @param array The array to be searched.
      * @return An array of the smallest values in each row.
      */
-    int[] smallestValues(int[][] array) {
+    public int[] smallestValues(int[][] array) {
         return null;
     }
 
@@ -108,7 +112,7 @@ public class SaddlePoints {
      * @param array The array to be checked.
      * @return True if the array has a saddle point, else false.
      */
-    boolean hasSaddlePoint(int[][] array) {
+    public boolean hasSaddlePoint(int[][] array) {
         return true;
     }
 
@@ -120,7 +124,7 @@ public class SaddlePoints {
      * @param array An array containing one or more saddle points.
      * @return The lowest-numbered row containing a saddle point.
      */
-    int saddlePointRow(int[][] array) {
+    public int saddlePointRow(int[][] array) {
         return -1;
     }
 
@@ -133,7 +137,7 @@ public class SaddlePoints {
      * @return The lowest-numbered column containing a saddle point.
      */
 
-    int saddlePointColumn(int[][] array) {
+    public int saddlePointColumn(int[][] array) {
         return -1;
     }
 }
