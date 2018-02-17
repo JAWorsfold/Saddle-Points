@@ -54,9 +54,7 @@ public class SaddlePoints {
         for (int i=0; i<array.length; i++) {
             for (int j=0; j<array[i].length; j++) {
                 array[i][j] = minValue + rand.nextInt((maxValue - minValue) + 1);
-                System.out.print(array[i][j] + " ");
             }
-            System.out.println("");
         }
         return array;
     }
@@ -82,7 +80,11 @@ public class SaddlePoints {
      * @return The smallest value in the array.
      */
     public int smallest(int[] array) {
-        return Integer.MAX_VALUE;
+        int smallest = array[0];
+        for (int i=0; i<array.length; i++) {
+            if (smallest > array[i]){ smallest = array[i]; }
+        }
+        return smallest;
     }
 
     /**

@@ -17,8 +17,8 @@ public class SaddlePointsTest {
 
     @Before
     public void setUp() throws Exception {
-        // If you use the same variables in multiple tests,
-        //  assign values to them here
+        int[][] arrayOne = sp.createRandomArray(2, 2, -10, 10);
+
     }
 
     @Test
@@ -68,6 +68,19 @@ public class SaddlePointsTest {
     public void testLargestTwo() {
         int[] array = {-9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 0};
         assertEquals(0, sp.largest(array));
+    }
+
+    @Test
+    public void testSmallestOne() {
+        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        assertEquals(0, sp.smallest(array));
+        // Put sp. in front of every call to a method in SaddlePoints
+    }
+
+    @Test
+    public void testSmallestTwo() {
+        int[] array = {-9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 0};
+        assertEquals(-9, sp.smallest(array));
     }
 
     @Test

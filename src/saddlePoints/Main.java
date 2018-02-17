@@ -11,8 +11,6 @@ public class Main {
      */
     public static void main(String[] args) {
         // new SaddlePoints().run();
-        SaddlePoints sp = new SaddlePoints();
-        sp.createRandomArray(4, 4, 0, 9);
     }
 
 }
