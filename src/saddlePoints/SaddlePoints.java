@@ -94,7 +94,15 @@ public class SaddlePoints {
      * @return An array of the largest values in each column.
      */
     public int[] largestValues(int[][] array) {
-        return null;
+        int[] largestValues = new int[array[0].length];
+        for (int i=0; i<array[0].length; i++) {
+            int largest = array[0][i];
+            for (int j=0; j<array.length; j++) {
+                if (array[j][i] > largest) { largest = array[j][i]; }
+            }
+        largestValues[i] = largest;
+        }
+        return largestValues;
     }
 
     /**
@@ -104,7 +112,15 @@ public class SaddlePoints {
      * @return An array of the smallest values in each row.
      */
     public int[] smallestValues(int[][] array) {
-        return null;
+        int[] smallestValues = new int[array.length];
+        for (int i=0; i<array.length; i++) {
+            int smallest = array[i][0];
+            for (int j=0; j<array[i].length; j++) {
+                if (array[i][j] < smallest) { smallest = array[i][j]; }
+            }
+            smallestValues[i] = smallest;
+        }
+        return smallestValues;
     }
 
 

@@ -84,8 +84,35 @@ public class SaddlePointsTest {
     }
 
     @Test
+    public void testLargestValuesOne() {
+        int[][] array = {{1, 2},{-1, 0}};
+        int[] arrayAnswer = {1, 2};
+        assertArrayEquals(arrayAnswer, sp.largestValues(array));
+    }
+
+    @Test
+    public void testLargestValuesTwo() {
+        int[][] array = {{1, 2, 3},{-2, 1, 0}};
+        int[] arrayAnswer = {1, 2, 3};
+        assertArrayEquals(arrayAnswer, sp.largestValues(array));
+    }
+
+    @Test
+    public void testSmallestValuesOne() {
+        int[][] array = {{1, 2}, {-1, 0}};
+        int[] arrayAnswer = {1, -1};
+        assertArrayEquals(arrayAnswer, sp.smallestValues(array));
+    }
+
+    @Test
+    public void testSmallestValuesTwo() {
+        int[][] array = {{1, 2, 3}, {-2, 1, 0}};
+        int[] arrayAnswer = {1, -2};
+        assertArrayEquals(arrayAnswer, sp.smallestValues(array));
+    }
+
+    @Test
     public void testSomeMethod() {
-        // Put tests here
-        // Put sp. in front of every call to a method in SaddlePoints
+
     }
 }
