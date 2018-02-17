@@ -112,7 +112,19 @@ public class SaddlePointsTest {
     }
 
     @Test
-    public void testSomeMethod() {
+    public void testHasSaddlePointTrue() {
+        int[][] array = {{-9, 12, -6},
+                         { 7, 14, 5},
+                         {10, -8, 3},
+                         { 6, 17,-10}};
+        assertTrue(sp.hasSaddlePoint(array));
+    }
 
+    @Test
+    public void testHasSaddlePointFalse() {
+        int[][] array = {{ 1, -2, 3},
+                         {-6, 5, -4},
+                         { 7, -8, 9}};
+        assertFalse(sp.hasSaddlePoint(array));
     }
 }

@@ -131,7 +131,8 @@ public class SaddlePoints {
      * @return True if the array has a saddle point, else false.
      */
     public boolean hasSaddlePoint(int[][] array) {
-        return true;
+        // compare the largest of the smallest values against the smallest of the largest values using methods
+        return this.largest(this.smallestValues(array)) == this.smallest(this.largestValues(array));
     }
 
     /**
