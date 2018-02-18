@@ -16,14 +16,19 @@ public class SaddlePoints {
      * one without a saddle point.
      */
     void run() {
-//        int hadSaddlePoint = 0;
-//        int noSaddlePoint = 0;
-//        do {
-//            hadSaddlePoint++;
-//            noSaddlePoint++;
-//        } while (hadSaddlePoint >= 1 && noSaddlePoint >= 1);
-//        this.createRandomArray(2,2,-10,10);
-
+        Random rand = new Random();
+        int hadSaddlePoint = 0;
+        int noSaddlePoint = 0;
+        do {
+            int arrayRowSize = 2 + rand.nextInt((5 - 2) + 1);
+            int arrayColumnSize = 2 + rand.nextInt((5 - 2) + 1);
+            int[][] array = this.createRandomArray(arrayRowSize, arrayColumnSize, 10, 99);
+            this.printArray(array);
+            this.printArrayInfo(array);
+            if (this.hasSaddlePoint(array)) {
+                hadSaddlePoint++;
+            } else { noSaddlePoint++; }
+        } while ((noSaddlePoint < 1) || (hadSaddlePoint < 1));
     }
 
     /**
@@ -34,9 +39,9 @@ public class SaddlePoints {
     void printArray(int[][] array) {
         for (int i=0; i<array.length; i++) {
             for (int j = 0; j < array[0].length; j++) {
-                System.out.print(array[i][j] + " ");
+                System.out.print("| " + array[i][j] + " ");
             }
-            System.out.println();
+            System.out.println("|");
         }
     }
 
@@ -48,9 +53,13 @@ public class SaddlePoints {
      */
     void printArrayInfo(int[][] array) {
         if (this.hasSaddlePoint(array)) {
-            System.out.print("The given array has a saddle point at row " + this.saddlePointRow(array)
+            System.out.println("The given array has a saddle point at row " + this.saddlePointRow(array)
                     + ", column " + this.saddlePointColumn(array) + ", with the value "
                     + this.largest(this.smallestValues(array)) + ".");
+            System.out.println();
+        } else {
+            System.out.println("This array does not contain a saddle point.");
+            System.out.println();
         }
     }
 
