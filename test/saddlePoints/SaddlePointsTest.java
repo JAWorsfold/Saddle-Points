@@ -11,120 +11,164 @@ import saddlePoints.SaddlePoints;
  */
 public class SaddlePointsTest {
     SaddlePoints sp = new SaddlePoints(); // create an instance variable
+    int[][] randomArray;
+    int[] arrayLargeSmallOne;
+    int[] arrayLargeSmallTwo;
+    int[][] arrayLargeSmallValueOne;
+    int[][] arrayLargeSmallValueTwo;
+    int[][] arrayGameOne;
+    int[][] arrayGameTwo;
 
-    // If you use the same variables in multiple tests,
-    //  declare them here
+    int[][] arrayGameThree;
+    int[][] arrayGameFour;
+
 
     @Before
-    public void setUp() throws Exception {
-        int[][] arrayOne = sp.createRandomArray(2, 2, -10, 10);
-
+    public void setUp() {
+        randomArray = sp.createRandomArray(2, 2, -10, 10);
+        arrayLargeSmallOne = new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        arrayLargeSmallTwo = new int[] {-9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 0};
+        arrayLargeSmallValueOne = new int[][] {{1, 2},{-1, 0}};
+        arrayLargeSmallValueTwo = new int[][] {{1, 2, 3}, {-2, 1, 0}};
+        arrayGameOne = new int[][] {{-9, 12, -6},
+                                    { 7, 14,  5},
+                                    {10, -8,  3},
+                                    { 6, 17,-10}};
+        arrayGameTwo = new int[][] {{-50,  29,  17,   4,   8, -15},
+                                    { 10,  -3,  45,  28,   2, -44},
+                                    { 15,  76,  31, -59,  39, -27},
+                                    {  9,  22,  80,  67,  72,   7},
+                                    { 33,   1, -13,  18,   2, -53},
+                                    {-64,  98,   2, -81,   9,  -1},
+                                    {  6,   5,  47, -77,  25,   0}};
+        //arrayGameThree = new int[][]
+        //arrayGameFour = new int[][]
     }
 
     @Test
     public void testCreateRandomArrayIsCorrectSize() {
-        int[][] arrayOne = sp.createRandomArray(2, 2, -10, 10);
         int[][] arrayTwo = new int[2][2];
-        assertTrue(arrayTwo.length == arrayOne.length);
-        assertTrue(arrayTwo[0].length == arrayOne[0].length);
+        assertTrue(arrayTwo.length == randomArray.length);
+        assertTrue(arrayTwo[0].length == randomArray[0].length);
     }
 
     @Test
     public void testCreateRandomArrayIsCorrectRange() {
-        int[][] arrayOne = sp.createRandomArray(2, 2, -10, 10);
-        for (int i=0; i<arrayOne.length; i++) {
-            for (int j=0; j<arrayOne[i].length; j++) {
-                assertTrue(arrayOne[i][j] <= 10);
-                assertTrue(arrayOne[i][j] >= -10);
+        for (int i=0; i<randomArray.length; i++) {
+            for (int j=0; j<randomArray[i].length; j++) {
+                assertTrue(randomArray[i][j] <= 10);
+                assertTrue(randomArray[i][j] >= -10);
             }
         }
     }
 
     @Test
     public void testCreateRandomArrayDoesNotRepeat() {
-        int[][] arrayOne = sp.createRandomArray(2, 2, -10, 10);
         int count = 0;
-        int control = arrayOne[0][0];
-        for (int i=0; i<arrayOne.length; i++) {
-            for (int j = 0; j<arrayOne[i].length; j++) {
-                if (control == arrayOne[i][j]) {
+        int control = randomArray[0][0];
+        for (int i=0; i<randomArray.length; i++) {
+            for (int j = 0; j<randomArray[i].length; j++) {
+                if (control == randomArray[i][j]) {
                     count++;
                 }
             }
         }
-        if (count == (arrayOne.length * arrayOne[0].length)) {
+        if (count == (randomArray.length * randomArray[0].length)) {
             fail("Array should not contain all the same number.");
         }
     }
 
     @Test
     public void testLargestOne() {
-        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        assertEquals(9, sp.largest(array));
-        // Put sp. in front of every call to a method in SaddlePoints
+        assertEquals(9, sp.largest(arrayLargeSmallOne));
     }
 
     @Test
     public void testLargestTwo() {
-        int[] array = {-9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 0};
-        assertEquals(0, sp.largest(array));
+        assertEquals(0, sp.largest(arrayLargeSmallTwo));
     }
 
     @Test
     public void testSmallestOne() {
-        int[] array = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-        assertEquals(0, sp.smallest(array));
-        // Put sp. in front of every call to a method in SaddlePoints
+        assertEquals(0, sp.smallest(arrayLargeSmallOne));
     }
 
     @Test
     public void testSmallestTwo() {
-        int[] array = {-9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 0};
-        assertEquals(-9, sp.smallest(array));
+        assertEquals(-9, sp.smallest(arrayLargeSmallTwo));
     }
 
     @Test
     public void testLargestValuesOne() {
-        int[][] array = {{1, 2},{-1, 0}};
         int[] arrayAnswer = {1, 2};
-        assertArrayEquals(arrayAnswer, sp.largestValues(array));
+        assertArrayEquals(arrayAnswer, sp.largestValues(arrayLargeSmallValueOne));
     }
 
     @Test
     public void testLargestValuesTwo() {
-        int[][] array = {{1, 2, 3},{-2, 1, 0}};
         int[] arrayAnswer = {1, 2, 3};
-        assertArrayEquals(arrayAnswer, sp.largestValues(array));
+        assertArrayEquals(arrayAnswer, sp.largestValues(arrayLargeSmallValueTwo));
     }
 
     @Test
     public void testSmallestValuesOne() {
-        int[][] array = {{1, 2}, {-1, 0}};
         int[] arrayAnswer = {1, -1};
-        assertArrayEquals(arrayAnswer, sp.smallestValues(array));
+        assertArrayEquals(arrayAnswer, sp.smallestValues(arrayLargeSmallValueOne));
     }
 
     @Test
     public void testSmallestValuesTwo() {
-        int[][] array = {{1, 2, 3}, {-2, 1, 0}};
         int[] arrayAnswer = {1, -2};
-        assertArrayEquals(arrayAnswer, sp.smallestValues(array));
+        assertArrayEquals(arrayAnswer, sp.smallestValues(arrayLargeSmallValueTwo));
     }
 
     @Test
-    public void testHasSaddlePointTrue() {
-        int[][] array = {{-9, 12, -6},
-                         { 7, 14, 5},
-                         {10, -8, 3},
-                         { 6, 17,-10}};
-        assertTrue(sp.hasSaddlePoint(array));
+    public void testHasSaddlePointTrueOne() {
+        assertTrue(sp.hasSaddlePoint(arrayGameOne));
     }
 
     @Test
-    public void testHasSaddlePointFalse() {
+    public void testHasSaddlePointTrueTwo() {
+        assertTrue(sp.hasSaddlePoint(arrayGameTwo));
+    }
+
+    @Test
+    public void testHasSaddlePointFalseOne() {
         int[][] array = {{ 1, -2, 3},
                          {-6, 5, -4},
                          { 7, -8, 9}};
         assertFalse(sp.hasSaddlePoint(array));
+    }
+
+    @Test
+    public void testHasSaddlePointFalseTwo() {
+        int[][] array = {{-50,  29,  17,   4,   8, -15},
+                         { 10,  -3,  45,  28,   2, -44},
+                         { 15,  76,  31, -59,  39, -27},
+                         {-19,  22,  80,  67,  72,   7},
+                         { 33,   1, -13,  18,   2, -53},
+                         {-64,  98,   2, -81,   9,  -1},
+                         {  6,   5,  47, -77,  25,   0}};
+        assertFalse(sp.hasSaddlePoint(array));
+    }
+
+    @Test
+    public void testSaddlePointRowOne() {
+        assertEquals(1, sp.saddlePointRow(arrayGameOne));
+    }
+
+    @Test
+    public void testSaddlePointRowTwo() {
+        assertEquals(3, sp.saddlePointRow(arrayGameTwo));
+    }
+
+    @Test
+    public void testSaddlePointColumnOne() {
+        assertEquals(2, sp.saddlePointColumn(arrayGameOne));
+    }
+
+    @Test
+    public void testSaddlePointColumnTwo() {
+        assertEquals(5, sp.saddlePointColumn(arrayGameTwo));
     }
 }

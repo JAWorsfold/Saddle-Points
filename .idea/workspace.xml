@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4bd5fca9-d7c5-4feb-92df-20532ad66284" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/pop-ii-coursework-one-SaddlePoints/saddlePoints/SaddlePoints.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/out/test/pop-ii-coursework-one-SaddlePoints/saddlepoints/SaddlePointsTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/saddlePoints/Main.java" afterPath="$PROJECT_DIR$/src/saddlePoints/Main.java" />
       <change beforePath="$PROJECT_DIR$/src/saddlePoints/SaddlePoints.java" afterPath="$PROJECT_DIR$/src/saddlePoints/SaddlePoints.java" />
       <change beforePath="$PROJECT_DIR$/test/saddlePoints/SaddlePointsTest.java" afterPath="$PROJECT_DIR$/test/saddlePoints/SaddlePointsTest.java" />
     </list>
@@ -19,8 +22,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/saddlePoints/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+            <state relative-caret-position="364">
+              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -29,14 +32,9 @@
       <file leaf-file-name="SaddlePoints.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/saddlePoints/SaddlePoints.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="135" column="5" lean-forward="true" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
-              <folding>
-                <element signature="e#4825#4826#0" expanded="true" />
-                <element signature="e#4850#4851#0" expanded="true" />
-                <element signature="e#5282#5283#0" expanded="true" />
-                <element signature="e#5307#5308#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="303">
+              <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -44,10 +42,30 @@
       <file leaf-file-name="SaddlePointsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/saddlePoints/SaddlePointsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+            <state relative-caret-position="286">
+              <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2821#2822#0" expanded="true" />
+                <element signature="e#2884#2885#0" expanded="true" />
+                <element signature="e#2930#2931#0" expanded="true" />
+                <element signature="e#2993#2994#0" expanded="true" />
+                <element signature="e#3040#3041#0" expanded="true" />
+                <element signature="e#3104#3105#0" expanded="true" />
+                <element signature="e#3151#3152#0" expanded="true" />
+                <element signature="e#3216#3217#0" expanded="true" />
+                <element signature="e#3990#3991#0" expanded="true" />
+                <element signature="e#4049#4050#0" expanded="true" />
+                <element signature="e#4106#4107#0" expanded="true" />
+                <element signature="e#4165#4166#0" expanded="true" />
+                <element signature="e#4955#4956#0" expanded="true" />
+                <element signature="e#5019#5020#0" expanded="true" />
+                <element signature="e#5072#5073#0" expanded="true" />
+                <element signature="e#5136#5137#0" expanded="true" />
+                <element signature="e#5192#5193#0" expanded="true" />
+                <element signature="e#5259#5260#0" expanded="true" />
+                <element signature="e#5315#5316#0" expanded="true" />
+                <element signature="e#5382#5383#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -72,9 +90,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/test/saddlePoints/SaddlePointsTest.java" />
         <option value="$PROJECT_DIR$/src/saddlePoints/Main.java" />
         <option value="$PROJECT_DIR$/src/saddlePoints/SaddlePoints.java" />
-        <option value="$PROJECT_DIR$/test/saddlePoints/SaddlePointsTest.java" />
       </list>
     </option>
   </component>
@@ -164,12 +182,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SaddlePointsTest.testHasSaddlePointTrue">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <module />
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="saddlePoints.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="saddlePoints.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="pop-ii-coursework-one-SaddlePoints" />
+      <envs />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -185,7 +222,7 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="SaddlePointsTest.testHasSaddlePointFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaddlePointsTest.testSaddlePointColumnOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="saddlepoints.*" />
@@ -197,7 +234,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="saddlePoints" />
       <option name="MAIN_CLASS_NAME" value="saddlepoints.SaddlePointsTest" />
-      <option name="METHOD_NAME" value="testHasSaddlePointFalse" />
+      <option name="METHOD_NAME" value="testSaddlePointColumnOne" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -210,7 +247,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SaddlePointsTest.testHasSaddlePointOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaddlePointsTest.testSaddlePointColumnTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="saddlepoints.*" />
@@ -222,7 +259,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="saddlePoints" />
       <option name="MAIN_CLASS_NAME" value="saddlepoints.SaddlePointsTest" />
-      <option name="METHOD_NAME" value="testHasSaddlePointOne" />
+      <option name="METHOD_NAME" value="testSaddlePointColumnTwo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -235,7 +272,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SaddlePointsTest.testHasSaddlePointTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaddlePointsTest.testSaddlePointRowOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="saddlepoints.*" />
@@ -247,7 +284,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="saddlePoints" />
       <option name="MAIN_CLASS_NAME" value="saddlepoints.SaddlePointsTest" />
-      <option name="METHOD_NAME" value="testHasSaddlePointTrue" />
+      <option name="METHOD_NAME" value="testSaddlePointRowOne" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -260,7 +297,7 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SaddlePointsTest.testLargestValuesOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SaddlePointsTest.testSaddlePointRowTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="saddlepoints.*" />
@@ -272,32 +309,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="saddlePoints" />
       <option name="MAIN_CLASS_NAME" value="saddlepoints.SaddlePointsTest" />
-      <option name="METHOD_NAME" value="testLargestValuesOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="SaddlePointsTest.testLargestValuesTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="saddlepoints.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="pop-ii-coursework-one-SaddlePoints" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="saddlePoints" />
-      <option name="MAIN_CLASS_NAME" value="saddlepoints.SaddlePointsTest" />
-      <option name="METHOD_NAME" value="testLargestValuesTwo" />
+      <option name="METHOD_NAME" value="testSaddlePointRowTwo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -371,19 +383,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testLargestValuesOne" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testLargestValuesTwo" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testHasSaddlePointOne" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testHasSaddlePointFalse" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testHasSaddlePointTrue" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testSaddlePointRowOne" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testSaddlePointRowTwo" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testSaddlePointColumnOne" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testSaddlePointColumnTwo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testHasSaddlePointTrue" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testHasSaddlePointFalse" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testHasSaddlePointOne" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testLargestValuesTwo" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testLargestValuesOne" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testSaddlePointColumnTwo" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testSaddlePointColumnOne" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testSaddlePointRowTwo" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SaddlePointsTest.testSaddlePointRowOne" />
       </list>
     </recent_temporary>
   </component>
@@ -401,44 +413,44 @@
       <option name="presentableId" value="Default" />
       <updated>1518875867388</updated>
       <workItem from="1518875870487" duration="1517000" />
-      <workItem from="1518877484059" duration="7310000" />
+      <workItem from="1518877484059" duration="15395000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SaddlePointsTest_testHasSaddlePointFalse - 2018.02.17 at 16h 29m 02s.xml">
-      <configuration name="SaddlePointsTest.testHasSaddlePointFalse" configurationId="JUnit" />
+    <history-entry file="SaddlePointsTest_testHasSaddlePointTrueOne - 2018.02.18 at 14h 34m 18s.xml">
+      <configuration name="SaddlePointsTest.testHasSaddlePointTrueOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaddlePointsTest_testHasSaddlePointOne - 2018.02.17 at 16h 28m 15s.xml">
-      <configuration name="SaddlePointsTest.testHasSaddlePointOne" configurationId="JUnit" />
+    <history-entry file="SaddlePointsTest_testHasSaddlePointTrueTwo - 2018.02.18 at 14h 36m 03s.xml">
+      <configuration name="SaddlePointsTest.testHasSaddlePointTrueTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaddlePointsTest_testHasSaddlePointTrue - 2018.02.17 at 16h 29m 07s.xml">
-      <configuration name="SaddlePointsTest.testHasSaddlePointTrue" configurationId="JUnit" />
+    <history-entry file="SaddlePointsTest_testSaddlePointColumnOne - 2018.02.18 at 15h 10m 09s.xml">
+      <configuration name="SaddlePointsTest.testSaddlePointColumnOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaddlePointsTest_testLargestValuesOne - 2018.02.17 at 16h 19m 26s.xml">
-      <configuration name="SaddlePointsTest.testLargestValuesOne" configurationId="JUnit" />
+    <history-entry file="SaddlePointsTest_testSaddlePointColumnTwo - 2018.02.18 at 15h 10m 46s.xml">
+      <configuration name="SaddlePointsTest.testSaddlePointColumnTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaddlePointsTest_testLargestValuesOne - 2018.02.17 at 16h 19m 49s.xml">
-      <configuration name="SaddlePointsTest.testLargestValuesOne" configurationId="JUnit" />
+    <history-entry file="SaddlePointsTest_testSaddlePointColumnTwo - 2018.02.18 at 15h 11m 38s.xml">
+      <configuration name="SaddlePointsTest.testSaddlePointColumnTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaddlePointsTest_testLargestValuesTwo - 2018.02.17 at 16h 19m 52s.xml">
-      <configuration name="SaddlePointsTest.testLargestValuesTwo" configurationId="JUnit" />
+    <history-entry file="SaddlePointsTest_testSaddlePointColumnTwo - 2018.02.18 at 15h 13m 39s.xml">
+      <configuration name="SaddlePointsTest.testSaddlePointColumnTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaddlePointsTest_testSmallestValuesOne - 2018.02.17 at 15h 49m 55s.xml">
+    <history-entry file="SaddlePointsTest_testSaddlePointRowOne - 2018.02.18 at 15h 08m 56s.xml">
+      <configuration name="SaddlePointsTest.testSaddlePointRowOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaddlePointsTest_testSaddlePointRowTwo - 2018.02.18 at 15h 09m 01s.xml">
+      <configuration name="SaddlePointsTest.testSaddlePointRowTwo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SaddlePointsTest_testSmallestValuesOne - 2018.02.18 at 14h 29m 27s.xml">
       <configuration name="SaddlePointsTest.testSmallestValuesOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SaddlePointsTest_testSmallestValuesOne - 2018.02.17 at 15h 52m 46s.xml">
-      <configuration name="SaddlePointsTest.testSmallestValuesOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SaddlePointsTest_testSmallestValuesTwo - 2018.02.17 at 15h 51m 01s.xml">
-      <configuration name="SaddlePointsTest.testSmallestValuesTwo" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SaddlePointsTest_testSmallestValuesTwo - 2018.02.17 at 15h 52m 48s.xml">
+    <history-entry file="SaddlePointsTest_testSmallestValuesTwo - 2018.02.18 at 14h 29m 49s.xml">
       <configuration name="SaddlePointsTest.testSmallestValuesTwo" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8827000" />
+    <option name="totallyTimeSpent" value="16912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -452,7 +464,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -481,7 +493,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -498,12 +510,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1534">
           <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-          <folding>
-            <element signature="e#4825#4826#0" expanded="true" />
-            <element signature="e#4850#4851#0" expanded="true" />
-            <element signature="e#5282#5283#0" expanded="true" />
-            <element signature="e#5307#5308#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -513,38 +520,81 @@
           <caret line="47" column="47" lean-forward="true" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2821#2822#0" expanded="true" />
+            <element signature="e#2884#2885#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
+            <element signature="e#2993#2994#0" expanded="true" />
+            <element signature="e#3040#3041#0" expanded="true" />
+            <element signature="e#3104#3105#0" expanded="true" />
+            <element signature="e#3151#3152#0" expanded="true" />
+            <element signature="e#3216#3217#0" expanded="true" />
+            <element signature="e#3990#3991#0" expanded="true" />
+            <element signature="e#4049#4050#0" expanded="true" />
+            <element signature="e#4106#4107#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+            <element signature="e#4955#4956#0" expanded="true" />
+            <element signature="e#5019#5020#0" expanded="true" />
+            <element signature="e#5072#5073#0" expanded="true" />
+            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="e#5192#5193#0" expanded="true" />
+            <element signature="e#5259#5260#0" expanded="true" />
+            <element signature="e#5315#5316#0" expanded="true" />
+            <element signature="e#5382#5383#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/saddlePoints/Main.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="35" lean-forward="false" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        <state relative-caret-position="187">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/saddlePoints/SaddlePointsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="112" column="0" lean-forward="true" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        <state relative-caret-position="286">
+          <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2821#2822#0" expanded="true" />
+            <element signature="e#2884#2885#0" expanded="true" />
+            <element signature="e#2930#2931#0" expanded="true" />
+            <element signature="e#2993#2994#0" expanded="true" />
+            <element signature="e#3040#3041#0" expanded="true" />
+            <element signature="e#3104#3105#0" expanded="true" />
+            <element signature="e#3151#3152#0" expanded="true" />
+            <element signature="e#3216#3217#0" expanded="true" />
+            <element signature="e#3990#3991#0" expanded="true" />
+            <element signature="e#4049#4050#0" expanded="true" />
+            <element signature="e#4106#4107#0" expanded="true" />
+            <element signature="e#4165#4166#0" expanded="true" />
+            <element signature="e#4955#4956#0" expanded="true" />
+            <element signature="e#5019#5020#0" expanded="true" />
+            <element signature="e#5072#5073#0" expanded="true" />
+            <element signature="e#5136#5137#0" expanded="true" />
+            <element signature="e#5192#5193#0" expanded="true" />
+            <element signature="e#5259#5260#0" expanded="true" />
+            <element signature="e#5315#5316#0" expanded="true" />
+            <element signature="e#5382#5383#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/saddlePoints/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/saddlePoints/SaddlePoints.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="135" column="5" lean-forward="true" selection-start-line="135" selection-start-column="5" selection-end-line="135" selection-end-column="5" />
-          <folding>
-            <element signature="e#4825#4826#0" expanded="true" />
-            <element signature="e#4850#4851#0" expanded="true" />
-            <element signature="e#5282#5283#0" expanded="true" />
-            <element signature="e#5307#5308#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="303">
+          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>

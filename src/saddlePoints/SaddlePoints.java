@@ -16,6 +16,13 @@ public class SaddlePoints {
      * one without a saddle point.
      */
     void run() {
+//        int hadSaddlePoint = 0;
+//        int noSaddlePoint = 0;
+//        do {
+//            hadSaddlePoint++;
+//            noSaddlePoint++;
+//        } while (hadSaddlePoint >= 1 && noSaddlePoint >= 1);
+//        this.createRandomArray(2,2,-10,10);
 
     }
 
@@ -25,7 +32,12 @@ public class SaddlePoints {
      * @param array The array to be printed.
      */
     void printArray(int[][] array) {
-
+        for (int i=0; i<array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
+                System.out.print(array[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 
     /**
@@ -35,7 +47,11 @@ public class SaddlePoints {
      * @param array The array to be checked.
      */
     void printArrayInfo(int[][] array) {
-
+        if (this.hasSaddlePoint(array)) {
+            System.out.print("The given array has a saddle point at row " + this.saddlePointRow(array)
+                    + ", column " + this.saddlePointColumn(array) + ", with the value "
+                    + this.largest(this.smallestValues(array)) + ".");
+        }
     }
 
     /**
@@ -144,7 +160,15 @@ public class SaddlePoints {
      * @return The lowest-numbered row containing a saddle point.
      */
     public int saddlePointRow(int[][] array) {
-        return -1;
+        int position = 0;
+        for (int i = 0; i<array.length; i++) {
+            for (int j = 0; j<array[0].length; j++) {
+                if (array[i][j] == this.largest(this.smallestValues(array))) {
+                    position = i;
+                }
+            }
+        }
+        return position;
     }
 
     /**
@@ -157,6 +181,14 @@ public class SaddlePoints {
      */
 
     public int saddlePointColumn(int[][] array) {
-        return -1;
+        int position = 0;
+        for (int i = 0; i<array.length; i++) {
+            for (int j = 0; j<array[0].length; j++) {
+                if (array[i][j] == this.smallest(this.largestValues(array))) {
+                    position = j;
+                }
+            }
+        }
+        return position;
     }
 }

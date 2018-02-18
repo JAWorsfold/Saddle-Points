@@ -12,11 +12,12 @@ public class Main {
     public static void main(String[] args) {
         // new SaddlePoints().run();
         SaddlePoints saddle = new SaddlePoints();
-        int[][] array = {{10, -2, 3}, {-2, 1, 0}};
-        int[] print = saddle.largestValues(array);
-        for (int i=0; i<print.length; i++) {
-            System.out.print(print[i] + " ");
-        }
+        int[][] array = {{-9, 12, -6},
+                         { 7, 14,  5},
+                         {10, -8,  3},
+                         { 6, 17,-10}};
+        saddle.printArray(array);
+        saddle.printArrayInfo(array);
     }
 
 }
